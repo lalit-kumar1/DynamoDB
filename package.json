@@ -1,0 +1,24 @@
+{
+	"name": "dynamodemo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"create-table": "ts-node src/createTable.ts",
+		"insert": "ts-node src/insert.ts",
+		"get": "ts-node src/get.ts",
+		"batch": "ts-node src/batch.ts",
+		"scan": "ts-node src/scan.ts",
+		"delete": "ts-node src/deleteTable.ts"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"typescript": "^5.1.6"
+	},
+	"dependencies": {
+		"@aws-sdk/client-dynamodb": "^3.382.0",
+		"@aws-sdk/lib-dynamodb": "^3.382.0"
+	}
+}
