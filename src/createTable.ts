@@ -23,11 +23,7 @@ const main = async () => {
 				AttributeName: "LastName",
 				KeyType: "RANGE",
 			},
-		],
-		ProvisionedThroughput: {
-			ReadCapacityUnits: 1,
-			WriteCapacityUnits: 1,
-		},
+		]
 	});
 
 	const response = await client.send(command);

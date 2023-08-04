@@ -7,10 +7,11 @@ export const main = async () => {
 	const command = new PutCommand({
 		TableName: "Users",
 		Item: {
-			FirstName: "Arun",
-			LastName: "Choudhary",
-			Mobile: 1234567890,
-		},
+			FirstName: "Sunny",
+			LastName: "Mehta",
+            Mobile: 1234567890,
+            TTL: 1691128840
+        },
 	});
 
 	const response = await docClient.send(command);

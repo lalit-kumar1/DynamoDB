@@ -7,8 +7,7 @@ export const main = async () => {
 	const command = new GetCommand({
 		TableName: "Users",
 		Key: {
-			FirstName: "Arun",
-			LastName: "Choudhary",
+			FirstName: "Arun"
 		},
 	});
 
