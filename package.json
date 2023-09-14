@@ -6,12 +6,13 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"create-table": "ts-node src/createTable.ts",
-    "ttl": "ts-node src/updateTable.ts",
+		"ttl": "ts-node src/updateTable.ts",
 		"insert": "ts-node src/insert.ts",
 		"get": "ts-node src/get.ts",
 		"batch": "ts-node src/batch.ts",
 		"scan": "ts-node src/scan.ts",
-		"delete": "ts-node src/deleteTable.ts"
+		"delete": "ts-node src/deleteTable.ts",
+		"script": "ts-node src/test.ts"
 	},
 	"author": "",
 	"license": "ISC",
@@ -21,6 +22,10 @@
 	"dependencies": {
 		"@aws-sdk/client-dynamodb": "^3.382.0",
 		"@aws-sdk/lib-dynamodb": "^3.382.0",
-		"ts-node": "^10.9.1"
+		"@types/uuid": "^9.0.3",
+		"csv-parser": "^3.0.0",
+		"fast-csv": "^4.3.6",
+		"ts-node": "^10.9.1",
+		"uuid": "^9.0.0"
 	}
 }

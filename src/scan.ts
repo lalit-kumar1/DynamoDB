@@ -5,9 +5,8 @@ const docClient = DynamoDBDocumentClient.from(client);
 
 export const main = async () => {
 	const command = new ScanCommand({
-		ProjectionExpression: "Mobile",
-		FilterExpression: "FirstName = :f_name",
-		ExpressionAttributeValues: { ":f_name": "Arun" },
+		FilterExpression: "FirstName = :f_name OR FirstName = :l_name",
+		ExpressionAttributeValues: { ":f_name": "Sunny", ":l_name": "Lalit" },
 		TableName: "Users",
 	});
 
